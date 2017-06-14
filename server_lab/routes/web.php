@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Support\Facades\App;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +18,14 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+
+Route::get('/bridge', function() {
+    $pusher = App::make('pusher');
+
+    $pusher->trigger( 'test-channel',
+                      'test-event', 
+                      array('text' => 'Preparing the Pusher Laracon.eu workshop!'));
+
+    return view('welcome');
+});

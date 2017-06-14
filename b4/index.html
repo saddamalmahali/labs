@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/ionicons.min.css">
+    <style>
+        .app{
+            margin-top: 100px;
+        }
+        .container{
+            margin-top: 20px;
+        }
+        @media (max-width: 576px) {
+            .col-sm-6{
+                margin-top: 20px;
+            }
+            .col-sm-6:first-child{
+                margin-top: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <butto class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-expanded="false" alia-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </butto>
+        <a href="" class="navbar-brand">KOPERASI</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a href="" class="nav-item nav-link active">Home</a>
+                <a href="" class="nav-item nav-link">Service</a>
+                <a href="" class="nav-item nav-link">Portofolio</a>
+                <a href="" class="nav-item nav-link">Tentang</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5>Modul Anggota</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="card-title"><img src="./img/1495758598_Mind-Map-Paper.svg" class="card-img-top" alt=""></div>
+                            <div class="card-text">Modul Ini Menyediakan Organisasi Anggota</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="btn btn-info float-right disabled">Masuk</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <h5>Modul Akuntansi</h5>
+                        </div>
+                        <div class="card-block">
+                            <div class="card-title"><img src="./img/1495758817_Analytics.svg" class="card-img" alt=""></div>
+                            <div class="card-text">Modul Ini Menyediakan Organisasi Anggota</div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="" class="btn btn-info float-right"><span class="fa fa-sign-in"></span> &nbsp;Masuk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="http://tether.io/dist/js/tether.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
